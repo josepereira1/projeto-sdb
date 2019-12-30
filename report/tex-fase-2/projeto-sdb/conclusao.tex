@@ -1,0 +1,13 @@
+\chapter{Conclusão}
+
+Em suma, conclui-se que alguns dos objetivos inicialmente propostos foram atingidos, tais como, análise da arquitetura, análise dos pontos críticos, instalação/deployment da aplicação e benchmark.\newline  
+
+No entanto, em relação à monitorização, não se conseguiu instalar as aplicações necessárias para a mesma, mais especificamente, o \textbf{MetricBeat} em cada nodo. \newline Como alternativa, e devido à falta de tempo, a equipa baseou-se na ferramenta de monitorização da \textbf{Google Cloud}, mais propriamente \textbf{GKE - Google Kubernetes Engine}, que disponibiliza algumas métricas, apesar de que em menos quantidade, foram bastante úteis, tal como já foi dito, no momento de teste de diferentes configuraçõe dos componentes da aplicação, para deteção de falta de \textbf{RAM}.\\
+
+A utilização de kubernetes, facilitou o processo de automatização do \textbf{Deployment} da aplicação, bem como das alterações da configuração dos componentes, tornando possíveis instalações para produção mais facilitadas.
+
+A análise de benchmark da aplicação apesar de se conseguir boas conclusões dos resultados, poderia ter sido feita com mais funcionalidades, mas devido à falta de tempo, não foi possível.
+
+Após os resultados obtidos nas várias configurações dos componentes, dos benchmarks, verificou-se que a melhor configuração, a nível performance, consiste seis nodos e sete replicas de cada componente.
+
+Por fim, e não menos importante a análise dos pontos críticos da aplicação passou por uma análise da arquitetura da mesma e identifcar possíveis problemas. Os principais problemas encontrados foram a não tolerância a faltas de determinados componentes, que compromentem todo o sistema.
